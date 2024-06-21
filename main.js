@@ -50,7 +50,7 @@ function atualizarTabela() {
 function atualizarMF() {
     const MF = calculaMF();
 
-    document.getElementById("media-final-valor").innerHTML = MF;
+    document.getElementById("media-final-valor").innerHTML = MF.toFixed(2);
     document.getElementById("media-final-resultado").innerHTML = MF >= notaMinima ? spanAprovado : spanReprovado;
 }
 
